@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f08b33">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="5dp">
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="#f08b33"
+                    app:civ_border_color="#eecc8d"
+                    app:civ_border_width="2dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_home"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:cardBackgroundColor="#8a2c02"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/minuteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#eecc8d"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="12dp"
+                    app:cardBackgroundColor="#8a2c02"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/secondTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="#eecc8d"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="#f08b33"
+                    app:civ_border_color="#eecc8d"
+                    app:civ_border_width="2dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_speaker"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#07000e"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout7"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout8"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#eecc8d"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <android.support.text.emoji.widget.EmojiTextView
+                        android:id="@+id/emojiTextView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:visibility="invisible"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#07000e"
+        android:gravity="center">
+    </LinearLayout>
+</LinearLayout>
